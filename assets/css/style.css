@@ -1,7 +1,7 @@
 body {
-    overflow: scroll;
+    /* overflow: scroll; */
     overflow-x: hidden;
-    font-family: 'Lato';
+    font-family: 'Times New Roman';
     margin: 0;
 }
 ::-webkit-scrollbar {
@@ -9,12 +9,33 @@ body {
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
-.column{
-    float: left;
+hr {
+    border: 0;
+    margin: 1.35em auto;
+    max-width: 100%;
+    background-position: 50%;
+    box-sizing: border-box;
 }
 
+.slash {
+    height: 10px;
+    background-image: linear-gradient(45deg,
+      hsla(0, 0%, 5%, 0),
+      hsla(0, 0%, 5%, 0) 33.33%,
+      hsla(0, 0%, 5%, 1) 33.33%,
+      hsla(0, 0%, 5%, 1) 66.67%,
+      hsla(0, 0%, 5%, 0) 66.67%,
+      hsla(0, 0%, 5%, 0) 100%);
+    background-size: 10px 100%;
+    width: 75%;
+}
+
+/* .column{
+    float: left;
+} */
+
 .left{
-    background-color: #89ABE3FF;
+    background-color: #2BAE66FF;
     color: #FCF6F5FF;
     width: 35%;
     top:0;
@@ -78,17 +99,19 @@ body {
 }
 
 #github-profile a:visited { text-decoration: none; color:black; }
-#github-profile a:hover { text-decoration: none; color:blue; }
+#github-profile a:hover { text-decoration: none; color:rgb(30, 121, 71); }
 #github-profile a:focus { text-decoration: none; color: black; }
-#github-profile a:hover { text-decoration: none; color:blue }
+#github-profile a:hover { text-decoration: none; color: rgb(30, 121, 71); }
 /* #github-profile a:active { text-decoration: none; color:blue } */
 
 .right{
     background-color: #FCF6F5FF;
-    color: #89ABE3FF;
-    margin-left: 35%;
+    color: #2BAE66FF;
+    float: right;
+    /* margin-left: 35%; */
     width: 65%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+    overflow: auto;
 }
 
 #portfolio-title{
@@ -101,14 +124,24 @@ body {
 }
 
 .project-title a{
+    padding-bottom: 0.15em;
+    --mainColor: #2BAE66FF;
+    background:
+        linear-gradient(
+            to bottom, var(--mainColor) 0%, 
+            var(--mainColor) 100%
+        );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: #000;
     text-decoration: none;
-    color: black;
+    transition: background-size .2s;
 }
 
-.project-description{
-    font-size: 18px;
-    text-align: center;
-}
+.project-title a:hover {
+    background-size: 4px 50px;
+  }
 
 .project-photo{
     text-align: center;
