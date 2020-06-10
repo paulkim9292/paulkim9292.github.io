@@ -72,6 +72,17 @@ body {
     margin-left: 12px;
 }
 
+#github-profile a{
+    text-decoration: none;
+    color: black;
+}
+
+#github-profile a:visited { text-decoration: none; color:black; }
+#github-profile a:hover { text-decoration: none; color:blue; }
+#github-profile a:focus { text-decoration: none; color: black; }
+#github-profile a:hover { text-decoration: none; color:blue }
+/* #github-profile a:active { text-decoration: none; color:blue } */
+
 .right{
     background-color: #FCF6F5FF;
     color: #89ABE3FF;
@@ -87,6 +98,11 @@ body {
 .project-title{
     font-size: 30px;
     text-align: center;
+}
+
+.project-title a{
+    text-decoration: none;
+    color: black;
 }
 
 .project-description{
