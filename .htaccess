@@ -5,7 +5,15 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 
 RewriteBase /
 RewriteRule ^project1/(.*)$ /$1 [L,NC,R]
+
+RewriteBase /
 RewriteRule ^project2/(.*)$ /$1 [L,NC,R]
+
+RewriteBase /
 RewriteRule ^project3/(.*)$ /$1 [L,NC,R]
+
+RewriteBase /
 RewriteRule ^project4/(.*)$ /$1 [L,NC,R]
+
+RewriteBase /
 RewriteRule ^project5/(.*)$ /$1 [L,NC,R]
