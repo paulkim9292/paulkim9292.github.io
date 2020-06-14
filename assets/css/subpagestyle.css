@@ -1,17 +1,37 @@
+body {
+    font-family: 'Times New Roman';
+    margin: 0;
+}
+
 .top-fill{
-    background-color: #2BAE66FF;
-    height: 20px;
+    /* make element inline flex-container */
+    /* this will make its children flex-items */
+    display: inline-flex;
+    /* align-items items in column */
+    flex-direction: row;
+    /* center items horizontally */
+    align-items: center;
+    /* center items vertically */
+    /* justify-content: center; */
+    background-color: #343148FF;
+    height: 150px;
     width: 100%;
+    top:0;
+    bottom:0;
+    left:0;
+    overflow: hidden;
 }
 
-.back-home{
-    float: left;
-    margin-left: 5%;
+.home{
+    font-family: sans-serif;
+    margin-left: 10%;
+    font-size: 20px;
+    z-index: 1;
 }
 
-.back-home a{
-    padding-bottom: 0.15em;
-    --mainColor: black;
+.home a{
+    padding: 0.5em;
+    --mainColor: #D7C49EFF;
     background:
         linear-gradient(
             to bottom, var(--mainColor) 0%, 
@@ -20,15 +40,81 @@
     background-position: 0 100%;
     background-repeat: repeat-x;
     background-size: 4px 4px;
-    color: #FCF6F5FF;;
+    color: #D7C49EFF;
     text-decoration: none;
-    transition: background-size .2s;
+    transition: background-size .3s;
 }
 
-.back-home a:hover {
+.home a:hover {
+    color: #343148FF;
     background-size: 4px 50px;
 }
 
 .project-title{
+    position: absolute;
+    text-align: center;
+    color: #D7C49EFF;
+    font-size: 30px;
+    font-style: italic;
+    width: 100%;
+}
+
+.content{
+    color: #343148FF;
+    background-color: #D7C49EFF;
+    text-align: center;
+    font-size: 20px;
+}
+
+#seemore{
+    font-size: 40px;
+    margin-bottom: 0.5em;
+}
+
+.nextbutton{
+    display: inline-flex;
+    /* align-items items in column */
+    flex-direction: row;
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 20px;
+}
+
+.nextbutton a{
+    padding: 0.2em;
+    --mainColor: #343148FF;
+    background:
+        linear-gradient(
+            to bottom, var(--mainColor) 0%, 
+            var(--mainColor) 100%
+        );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: #343148FF;
+    text-decoration: none;
+    transition: background-size .3s;
+    width: 150px;
+    height: 30px;
+}
+
+.nextbutton a:hover {
+    color: #D7C49EFF;
+    background-size: 4px 100px;
+}
+
+.bottom-fill{
+    background-color: #343148FF;
+    height: 120px;
+    width: 100%;
+    bottom:0;
+    left:0;
+    overflow: hidden;
+}
+
+.copyright{
+    font-size: 18px;
+    margin-top: 51px;
+    color: #D7C49EFF;
     text-align: center;
 }
