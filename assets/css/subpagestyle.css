@@ -135,7 +135,7 @@ body {
     text-decoration: none;
     transition: background-size .3s;
     width: 150px;
-    height: 30px;
+    /* height: 30px; */
 }
 
 .nextbutton a:hover {
