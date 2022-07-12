@@ -4,6 +4,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Nav = styled.nav`
+  background-color: #fdfdfd;
   height: 100%;
   width: 8.7vw;
   position: fixed;
@@ -50,7 +51,6 @@ const Menus = styled.div`
 
 const Button = styled.div`
   font-size: 1.3vw;
-  font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,14 +153,19 @@ function NavBar() {
       <Lower>
         <Social>
           <a
-            href="https://www.google.com/"
+            href="https://github.com/paulkim9292"
             target="_blank"
             style={{
               textDecoration: "none",
               color: "inherit",
+              width: "100%",
+              height: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            <FontAwesomeIcon icon={faGithub} size="2x" />
+            <FontAwesomeIcon icon={faGithub} style={{ fontSize: "2vw" }} />
           </a>
         </Social>
       </Lower>

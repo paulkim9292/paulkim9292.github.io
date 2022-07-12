@@ -12,8 +12,9 @@ function App() {
       <NavBar />
       <Hello />
       <About />
-      <Projects />
       <Skills />
+      <Projects />
+      <div className="footer">Designed & Built by Sungwoo Kim</div>
     </div>
   );
 }

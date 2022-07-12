@@ -4,9 +4,20 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #fdfdfd;
+  background-color: #eeeeee;
   color: #2f2f2f;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Black Han Sans", sans-serif;
+  /* font-family: Roboto, Arial, sans-serif; */
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw 0vw;
+  margin-left: 8.7vw;
+  background-color: #2f2f2f;
+  color: #fdfdfd;
 }
 
 :root {
