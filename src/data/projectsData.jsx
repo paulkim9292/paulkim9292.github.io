@@ -2,7 +2,7 @@ let projectsData = [
   {
     title: "Shopping App",
     img: "shopping",
-    description: "쇼핑몰 사이트입니다.",
+    description: "반응형 쇼핑몰 사이트입니다.",
     skills: ["React", "React-Query", "Redux"],
     github: "https://github.com/paulkim9292/react-shopping-app",
     website: "https://paulkim9292.github.io/react-shopping-app/",

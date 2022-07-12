@@ -50,7 +50,7 @@ const Menus = styled.div`
 `;
 
 const Button = styled.div`
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -8,9 +8,9 @@ import {
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectsPage = styled.section`
-  padding-left: 11.7vw;
-  padding-right: 3vw;
-  padding-top: 5vw;
+  padding-left: 10.7vw;
+  padding-right: 2vw;
+  padding-top: 3vw;
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
@@ -35,7 +35,7 @@ const Project = styled.div`
 `;
 
 const Img = styled.img`
-  width: 60%;
+  width: 55%;
   height: 100%;
   border-radius: 10px;
   padding: 1vw;
@@ -59,10 +59,13 @@ const Title = styled.div`
   font-weight: 600;
 `;
 
-const Description = styled.div``;
+const Description = styled.div`
+  margin: 1vw 0vw;
+`;
 
 const Skills = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `;
 
 const Skill = styled.div`
@@ -71,6 +74,7 @@ const Skill = styled.div`
   border-radius: 5px;
   padding: 0.3rem 0.8rem;
   margin-right: 1vw;
+  margin-bottom: 1vw;
   cursor: default;
 `;
 

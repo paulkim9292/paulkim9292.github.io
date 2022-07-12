@@ -10,9 +10,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const SkillsPage = styled.section`
-  padding-left: 11.7vw;
-  padding-right: 3vw;
-  padding-top: 5vw;
+  padding-left: 10.7vw;
+  padding-right: 2vw;
+  padding-top: 3vw;
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
@@ -42,8 +42,8 @@ const Skill = styled.div`
     rgba(199, 103, 168, 0.7) 100%
   );
   border-radius: 20px;
-  width: 10vw;
-  height: 15vw;
+  width: 8vw;
+  height: 12vw;
   &:hover ${SkillIcon} {
     transform: scale(0.8);
     transition: all 0.3s;
@@ -69,7 +69,7 @@ function Skills() {
           <SkillIcon>
             <FontAwesomeIcon
               icon={faJsSquare}
-              style={{ fontSize: "10vw", width: "100%" }}
+              style={{ fontSize: "7vw", width: "100%" }}
             />
           </SkillIcon>
         </Skill>
@@ -78,7 +78,7 @@ function Skills() {
           <SkillIcon>
             <FontAwesomeIcon
               icon={faReact}
-              style={{ fontSize: "10vw", width: "100%" }}
+              style={{ fontSize: "7vw", width: "100%" }}
             />
           </SkillIcon>
         </Skill>
@@ -87,7 +87,7 @@ function Skills() {
           <SkillIcon>
             <FontAwesomeIcon
               icon={faCss3Alt}
-              style={{ fontSize: "10vw", width: "100%" }}
+              style={{ fontSize: "7vw", width: "100%" }}
             />
           </SkillIcon>
         </Skill>
@@ -96,7 +96,7 @@ function Skills() {
           <SkillIcon>
             <FontAwesomeIcon
               icon={faHtml5}
-              style={{ fontSize: "10vw", width: "100%" }}
+              style={{ fontSize: "7vw", width: "100%" }}
             />
           </SkillIcon>
         </Skill>
@@ -105,7 +105,7 @@ function Skills() {
           <SkillIcon>
             <FontAwesomeIcon
               icon={faGitAlt}
-              style={{ fontSize: "10vw", width: "100%" }}
+              style={{ fontSize: "7vw", width: "100%" }}
             />
           </SkillIcon>
         </Skill>
