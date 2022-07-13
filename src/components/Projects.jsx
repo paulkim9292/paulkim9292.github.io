@@ -15,11 +15,19 @@ const ProjectsPage = styled.section`
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20vw;
+  @media screen and (max-width: 599px) {
+    padding: 0vw 10vw;
+    margin: 0;
+  }
 `;
 
 const PageTitle = styled.div`
   font-size: 2vw;
   padding-top: 3vw;
+  @media screen and (max-width: 599px) {
+    font-size: 6vw;
+    padding: 9vw 0vw;
+  }
 `;
 
 const Project = styled.div`
@@ -32,6 +40,9 @@ const Project = styled.div`
     `
       flex-direction: row-reverse;
   `}
+  @media screen and (max-width: 599px) {
+    flex-direction: column;
+  }
 `;
 
 const Img = styled.img`
@@ -41,6 +52,9 @@ const Img = styled.img`
   padding: 1vw;
   background-color: #fdfdfd;
   box-shadow: 1px 3px 4px #e0e0e0;
+  @media screen and (max-width: 599px) {
+    width: 100%;
+  }
 `;
 
 const Info = styled.div`
@@ -51,16 +65,25 @@ const Info = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media screen and (max-width: 599px) {
+    width: 100%;
+  }
 `;
 
 const Title = styled.div`
   font-family: "Black Han Sans", sans-serif;
   font-size: 1.3vw;
   font-weight: 600;
+  @media screen and (max-width: 599px) {
+    margin-top: 3vw;
+  }
 `;
 
 const Description = styled.div`
   margin: 1vw 0vw;
+  @media screen and (max-width: 599px) {
+    font-size: 1.2vw;
+  }
 `;
 
 const Skills = styled.div`
@@ -76,10 +99,22 @@ const Skill = styled.div`
   margin-right: 1vw;
   margin-bottom: 1vw;
   cursor: default;
+  @media screen and (max-width: 599px) {
+    border-width: 1.5px;
+    padding: 0.1rem 0.3rem;
+  }
 `;
 
 const Links = styled.div`
   display: flex;
+`;
+
+const Icon = styled(FontAwesomeIcon)`
+  font-size: 2vw;
+  @media screen and (max-width: 599px) {
+    font-size: 4vw;
+    padding-right: 2vw;
+  }
 `;
 
 function Projects() {
@@ -108,10 +143,7 @@ function Projects() {
                   color: "inherit",
                 }}
               >
-                <FontAwesomeIcon
-                  icon={faGithubSquare}
-                  style={{ fontSize: "2vw" }}
-                />
+                <Icon icon={faGithubSquare} />
               </a>
               <a
                 href={project.website}
@@ -120,10 +152,7 @@ function Projects() {
                   color: "inherit",
                 }}
               >
-                <FontAwesomeIcon
-                  icon={faArrowUpRightFromSquare}
-                  style={{ fontSize: "2vw" }}
-                />
+                <Icon icon={faArrowUpRightFromSquare} />
               </a>
             </Links>
           </Info>

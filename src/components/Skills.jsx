@@ -16,11 +16,19 @@ const SkillsPage = styled.section`
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: 599px) {
+    padding: 0vw;
+    margin: 0;
+  }
 `;
 
 const Title = styled.div`
   font-size: 2vw;
   padding: 3vw 0vw;
+  @media screen and (max-width: 599px) {
+    font-size: 6vw;
+    padding: 9vw 10vw;
+  }
 `;
 
 const SkillContainer = styled.div`
@@ -47,6 +55,12 @@ const Skill = styled.div`
   &:hover ${SkillIcon} {
     transform: scale(0.8);
     transition: all 0.3s;
+  }
+  @media screen and (max-width: 599px) {
+    width: 15vw;
+    height: 18vw;
+    margin: 1vw;
+    border-radius: 5px;
   }
 `;
 
