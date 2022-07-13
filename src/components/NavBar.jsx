@@ -96,7 +96,7 @@ function NavBar() {
         <Menus>
           <Button>
             <a
-              href="https://www.google.com/"
+              href="https://kimsungwoo.notion.site/1c6da9f6edd64cd3b122a044395efeec"
               target="_blank"
               style={{
                 textDecoration: "none",
