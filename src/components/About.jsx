@@ -57,7 +57,7 @@ function About() {
         <Name>김성우 (Paul)</Name>
         <Item>• 신입 프론트엔드 개발자</Item>
         <Item>• 2001.02.14</Item>
-        <Item>• 홍콩과기대학교 컴퓨터공학과 재학중</Item>
+        <Item>• 홍콩과기대학교 컴퓨터공학과 재학중 (2학년 마치고 휴학)</Item>
         <Item>• paulkim9292@gmail.com</Item>
       </Content>
     </AboutPage>

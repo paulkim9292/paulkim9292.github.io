@@ -145,15 +145,18 @@ function Projects() {
               >
                 <Icon icon={faGithubSquare} />
               </a>
-              <a
-                href={project.website}
-                target="_blank"
-                style={{
-                  color: "inherit",
-                }}
-              >
-                <Icon icon={faArrowUpRightFromSquare} />
-              </a>
+              {project.website ? (
+                <a
+                  href={project.website}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    color: "inherit",
+                  }}
+                >
+                  <Icon icon={faArrowUpRightFromSquare} />
+                </a>
+              ) : null}
             </Links>
           </Info>
         </Project>

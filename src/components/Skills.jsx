@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faFileCode } from "@fortawesome/free-solid-svg-icons";
 import {
   faJsSquare,
   faReact,
   faCss3Alt,
   faHtml5,
   faGitAlt,
+  faPython,
 } from "@fortawesome/free-brands-svg-icons";
 
 const SkillsPage = styled.section`
@@ -43,6 +44,7 @@ const SkillIcon = styled.div`
 `;
 
 const Skill = styled.div`
+  flex-basis: 20%;
   margin: 1rem;
   background: linear-gradient(
     0deg,
@@ -97,6 +99,15 @@ function Skills() {
           </SkillIcon>
         </Skill>
         <Skill>
+          <SkillTitle>Next.js</SkillTitle>
+          <SkillIcon>
+            <FontAwesomeIcon
+              icon={faReact}
+              style={{ fontSize: "7vw", width: "100%" }}
+            />
+          </SkillIcon>
+        </Skill>
+        <Skill>
           <SkillTitle>CSS3</SkillTitle>
           <SkillIcon>
             <FontAwesomeIcon
@@ -119,6 +130,24 @@ function Skills() {
           <SkillIcon>
             <FontAwesomeIcon
               icon={faGitAlt}
+              style={{ fontSize: "7vw", width: "100%" }}
+            />
+          </SkillIcon>
+        </Skill>
+        <Skill>
+          <SkillTitle>C++</SkillTitle>
+          <SkillIcon>
+            <FontAwesomeIcon
+              icon={faFileCode}
+              style={{ fontSize: "7vw", width: "100%" }}
+            />
+          </SkillIcon>
+        </Skill>
+        <Skill>
+          <SkillTitle>Python</SkillTitle>
+          <SkillIcon>
+            <FontAwesomeIcon
+              icon={faPython}
               style={{ fontSize: "7vw", width: "100%" }}
             />
           </SkillIcon>

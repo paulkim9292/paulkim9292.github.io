@@ -1,5 +1,13 @@
 let projectsData = [
   {
+    title: "가상화폐 모의 거래소 (진행중)",
+    img: "crypto",
+    description:
+      "Next.js로 만들고 있는 가상화폐 모의 거래소입니다. WebSocket으로 실시간 데이터를 받아오고 모의로 가상화폐 거래를 할 수 있는 시스템을 구축하였습니다.",
+    skills: ["Next.js", "Redux", "WebSocket", "Chart Library"],
+    github: "https://github.com/paulkim9292/crypto-simulator",
+  },
+  {
     title: "Shopping App",
     img: "shopping",
     description:
